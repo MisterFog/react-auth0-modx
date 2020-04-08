@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FlexWrapper, Panel } from '../../Style';
 import store from '../../Store';
-import { Button } from 'reactstrap';
+import { Button } from '../../Style';
 import auth0 from 'auth0-js';
 import Avatar from '../../Components/Avatar/Avatar';
 import key from '../../key_auth0';
