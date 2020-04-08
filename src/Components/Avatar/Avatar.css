@@ -1,0 +1,21 @@
+/* .avatar {
+  width: fit-content;
+  color: #ffffff;
+  position: absolute;
+  right: 10px;
+} */
+
+.avatar-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.avatar-info > img {
+  border-radius: 50%;
+  width: 50px;
+}
+
+.avatar-info > span {
+  margin-left: 10px;
+}
