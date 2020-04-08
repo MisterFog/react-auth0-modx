@@ -1,0 +1,31 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  box-shadow: 4px 0 10px -3px #010101;
+  background-color: #2a2e35;
+}
+.footer .content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  /* центрируем */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.footer .content > p {
+  margin: 0 20px;
+  color: #ffffff;
+}
+.footer .content .logo {
+  width: 50px;
+  background-color: #c8c8d8;
+  border-radius: 14px;
+  margin: 0 20px;
+}

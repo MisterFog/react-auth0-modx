@@ -11,6 +11,7 @@ import { PrivateRoute } from './PrivateRoute';
 import { Nav, NavLink, Logo } from './Style';
 import Avatar from './Components/Avatar/Avatar';
 import LogIn from './Components/LogIn';
+import Footer from './Components/Footer';
 
 // mobx
 import store from './Store';
@@ -48,6 +49,7 @@ class App extends Component {
           <Redirect to="/public" />
           {/* если используется route отличный от прописаных выше, пользователь бедет перенаправлен на /public */}
         </Switch>
+        <Footer />
       </AuthProvider>
     );
   }
