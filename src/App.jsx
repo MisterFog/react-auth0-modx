@@ -8,7 +8,7 @@ import Registration from './Pages/Login';
 import Profile from './Pages/Profile';
 import { AuthProvider } from './Pages/Auth';
 import { PrivateRoute } from './PrivateRoute';
-import { Nav, NavLink } from './Style';
+import { Nav, NavLink, Logo } from './Style';
 import Avatar from './Components/Avatar/Avatar';
 import LogIn from './Components/LogIn';
 
@@ -23,6 +23,9 @@ class App extends Component {
     return (
       <AuthProvider>
         <Nav>
+          <NavLink to="/public">
+            <Logo src={require('./Img/logotyp.png')} alt="logotyp" />
+          </NavLink>
           <NavLink to="/public">Public</NavLink>
           <NavLink to="/private">Private</NavLink>
           {!localStorage.getItem('access_token') ? (
