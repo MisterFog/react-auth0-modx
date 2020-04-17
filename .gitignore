@@ -24,3 +24,4 @@ yarn-error.log*
 
 # auth0
 src/key_auth0.js
+key_monga.js
