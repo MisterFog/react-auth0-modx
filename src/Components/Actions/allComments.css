@@ -1,0 +1,87 @@
+:root {
+  --main-color: #f96a1f;
+  --secondary-color: white;
+  --main-text-color: #3e5869;
+  --secondary-text-color: #b0c7d6;
+  --send-message-form: #f5f5f5;
+}
+
+.comment-wrap {
+  border-radius: 26% 16% / 7% 18%;
+  overflow: overlay;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  color: var(--secondary-color);
+  background: var(--main-color);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.post_page {
+  background: #46484b;
+}
+.post_page ul {
+  padding: 20px 40px 0;
+}
+
+.post_page ul li {
+  list-style-type: none;
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.post_page .comment {
+  max-width: 600px;
+}
+
+/* .post_page .comment hr {
+  background: #383838;
+} */
+
+.post_page .comment .card-reveal {
+  display: none;
+}
+
+.post_page .comment .card-content p {
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.78;
+  margin: 0 0 20px 0;
+}
+.post_page .comment .card-content .card-image {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.post_page .comment .card-content .card-image > img {
+  border-radius: 50%;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.post_page .comment .card-content .card-image > span {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.post_page .comment .card-content .card-image > span > p {
+  margin: 0px;
+}
+
+.card-action {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin: 10px 0;
+}

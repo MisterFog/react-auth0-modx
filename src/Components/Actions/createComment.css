@@ -1,0 +1,35 @@
+.personInput {
+  margin: 20px 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.personInput form {
+  display: flex;
+  flex-flow: column;
+}
+
+.personInput form label {
+  text-align: left;
+}
+.personInput form .btn {
+  width: fit-content;
+  background: #f96a1f;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 6px;
+  font-weight: 800;
+  margin: 20px auto 0 auto;
+}
+
+.personInput form label input,
+textarea {
+  width: fit-content;
+  min-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

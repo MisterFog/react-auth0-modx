@@ -5,7 +5,9 @@ export const FlexWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  position: relative;
+  top: 70px;
+  height: 85vh;
 `;
 
 export const Panel = styled.div`
@@ -15,6 +17,8 @@ export const Panel = styled.div`
   box-shadow: 4px 0 10px -3px #010101;
   color: #fff;
   text-align: center;
+  // height: 76vh;
+  // position: relative;
 `;
 
 export const Button = styled.button`

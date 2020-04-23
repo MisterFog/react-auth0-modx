@@ -11,3 +11,8 @@
    clientID: 'your_clientID',
    };
    export default key;
+
+   Информация по подключению серверной части, mongoDB, настройке роутов:
+   https://medium.com/swlh/how-to-create-your-first-mern-mongodb-express-js-react-js-and-node-js-stack-7e8b20463e66
+
+   Информация по сопряжению mongoose схем: https://code.tutsplus.com/ru/articles/an-introduction-to-mongoose-for-mongodb-and-nodejs--cms-29527

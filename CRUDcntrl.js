@@ -25,6 +25,9 @@ const createPost = async (req, res) => {
       return res.status(201).json({
         success: true,
         id: post._id,
+        name: post.user,
+        title: post.title,
+        comment: post.text,
         message: 'Post created!',
       });
     })
@@ -47,7 +50,7 @@ const updatePost = async (req, res) => {
     });
   }
 
-  mongoPostType.findOne({ _id: req.params.id }, (err, post) => {
+  await mongoPostType.findOne({ _id: req.params.id }, (err, post) => {
     if (err) {
       return res.status(404).json({
         err,
@@ -82,13 +85,15 @@ const deletePost = async (req, res) => {
         return res.status(400).json({ success: false, error: err });
       }
 
-      if (!post) {
-        return res
-          .status(404)
-          .json({ success: false, error: `Post not found` });
-      }
+      // if (!post) {
+      //   return res
+      //     .status(404)
+      //     .json({ success: false, error: `Post not found` });
+      // }
 
-      return res.status(200).json({ success: true, data: post });
+      return res
+        .status(200)
+        .json({ success: true, _id: req.params.id, data: post });
     })
     .catch((err) => console.log(err));
 };

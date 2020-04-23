@@ -23,6 +23,26 @@ class Store {
     };
     this.setUser(user);
   }
+
+  /** action */
+  action = false;
+
+  setAction(change) {
+    this.action = change;
+  }
+
+  /** comments */
+  comments = [];
+
+  setComments(payload) {
+    this.comments = payload;
+  }
+
+  listComments(newlist) {
+    let comments = this.comments;
+    comments = newlist;
+    this.setComments(comments);
+  }
 }
 
 Store = decorate(Store, {
@@ -30,5 +50,12 @@ Store = decorate(Store, {
   user: observable, // mobx следит за изменениями этого оъекта и ререндерит интерфейс при необходимости
   setUser: action,
   authUser: action,
+  /** action */
+  action: observable,
+  setAction: action,
+  /** comments */
+  comments: observable,
+  setComments: action,
+  listComments: action,
 });
 export default new Store();
